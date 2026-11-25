@@ -1,6 +1,6 @@
 # Bhor ’26
 
-A literary and arts magazine showcase built with the Next.js App Router. The home page follows a flower opening into the current issue reveal. The /issue route contains a labelled reading sample.
+A literary and arts magazine showcase built with the Next.js App Router, TypeScript, and Tailwind CSS. The home page follows a flower opening into the current issue reveal. The /issue route contains a labelled reading sample.
 
 ```sh
 npm ci

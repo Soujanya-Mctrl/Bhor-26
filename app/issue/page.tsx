@@ -1,7 +1,8 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import styles from './issue.module.css';
 
-export const metadata = { title: 'Reading sample', description: 'A sample of the Bhor ’26 online reading experience.' };
+export const metadata: Metadata = { title: 'Reading sample', description: 'A sample of the Bhor ’26 online reading experience.' };
 
 export default function ReadingSample() {
   return (

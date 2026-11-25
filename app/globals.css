@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   color-scheme:dark;
   --ink:#090a0e;
@@ -23,7 +25,7 @@ h2 { font-size:clamp(3.7rem,7vw,7rem); line-height:.9; letter-spacing:-.036em; }
 .skip { position:fixed; top:.75rem; left:.75rem; z-index:12; padding:.7rem 1rem; background:var(--paper); color:var(--ink); transform:translateY(-180%); }
 .skip:focus { transform:none; }
 
-.masthead { position:absolute; inset:0 0 auto; z-index:4; display:flex; align-items:center; justify-content:space-between; padding:1rem var(--gutter); }
+.masthead { position:absolute; inset:0 0 auto; z-index:4; padding:1rem var(--gutter); }
 .wordmark, .footer-brand { font:400 2.45rem/.9 var(--font-display),Georgia,serif; text-decoration:none; }
 .wordmark span, .footer-brand span { color:var(--mist); }
 .masthead nav { display:flex; gap:clamp(1.1rem,3vw,3rem); }
@@ -64,16 +66,15 @@ figcaption { margin-top:.6rem; color:var(--muted); }
 .archive-heading { position:relative; z-index:2; }
 .archive h2 { font-size:clamp(3.35rem,5.9vw,6rem); }
 .archive-heading p { margin-top:1.25rem; color:var(--muted); max-width:32ch; }
-.archive-art { display:grid; grid-template-columns:1fr 1fr; gap:clamp(.8rem,2vw,2rem); }
+.archive-art { gap:clamp(.8rem,2vw,2rem); }
 .archive-art img { width:100%; aspect-ratio:4/5; height:auto; object-fit:cover; border:1px solid var(--rule); }
 .archive-art figure:first-child img { object-position:52% 50%; }
 .archive-art figure:nth-child(2) img { object-position:62% 50%; }
 
 footer { background:#0b0e18; }
-.footer-content { min-height:15rem; display:flex; align-items:center; justify-content:space-between; gap:1.5rem; padding-block:3rem; }
+.footer-content { min-height:15rem; padding-block:3rem; }
 .footer-brand, .footer-links { position:relative; z-index:2; }
 .footer-brand { font-size:clamp(4rem,9vw,8rem); }
-.footer-links { display:flex; flex-wrap:wrap; gap:1rem; align-items:center; }
 #motion-toggle, .intro-loader button { min-height:44px; padding:.35rem .75rem; background:transparent; color:var(--paper); border:1px solid var(--rule); cursor:pointer; }
 #motion-toggle:hover, .intro-loader button:hover { border-color:var(--mist); }
 

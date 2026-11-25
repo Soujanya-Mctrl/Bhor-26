@@ -9,7 +9,7 @@ export default function Home() {
         <p role="status">Opening Bhor ’26</p>
         <button type="button" data-intro-skip>Skip intro</button>
       </div>
-      <header className="masthead" id="top">
+      <header className="masthead flex items-center justify-between" id="top">
         <a className="wordmark" href="#top" aria-label="Bhor, back to top">Bhor<span>.</span></a>
         <nav aria-label="Main navigation"><a href="#issue">Magazine</a><a href="#archive">Archive</a></nav>
       </header>
@@ -46,16 +46,16 @@ export default function Home() {
         </section>
         <section className="archive content-width" id="archive" aria-labelledby="archive-title">
           <div className="archive-heading"><h2 id="archive-title">Earlier editions</h2><p>Past issues are still being gathered. These artwork studies show how covers will sit in the archive.</p></div>
-          <div className="archive-art">
+          <div className="archive-art grid grid-cols-2">
             <figure><img src="/assets/bhor-gesture.webp" alt="Hands reaching across a field of silver points" width="1050" height="591" loading="lazy" /><figcaption>Point cloud study</figcaption></figure>
             <figure><img src="/assets/bhor-fold.webp" alt="An indigo line of light tracing folded paper" width="1050" height="591" loading="lazy" /><figcaption>Folded light study</figcaption></figure>
           </div>
         </section>
       </main>
       <footer id="colophon">
-        <div className="footer-content content-width">
+        <div className="footer-content content-width flex items-center justify-between gap-6">
           <a className="footer-brand" href="#top" aria-label="Bhor, back to top">Bhor<span>.</span></a>
-          <div className="footer-links"><a href="#top">Back to top ↑</a><button type="button" id="motion-toggle" hidden>Pause motion</button></div>
+          <div className="footer-links flex flex-wrap items-center gap-4"><a href="#top">Back to top ↑</a><button type="button" id="motion-toggle" hidden>Pause motion</button></div>
         </div>
       </footer>
       <MotionStory />
